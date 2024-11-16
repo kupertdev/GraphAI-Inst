@@ -39,6 +39,46 @@ makearrow Box1; Box2
 makearrow Box2; Box3
 ```
 
+## Installing
+
+To get started, follow these steps:
+
+1. Install Python 3.10:
+
+   - On Windows, download and install from [python.org](https://www.python.org/downloads/release/python-3100/).
+   - On macOS/Linux, you can install Python 3.10 using a package manager:
+     - On macOS: `brew install python@3.10`
+     - On Ubuntu: `sudo apt install python3.10`
+
+2. Install Pillow:
+
+   Run the following command to install Pillow:
+   ```bash
+   pip install pillow
+   ```
+
+## Running
+
+There are two main ways to run the program:
+
+1. **Run the Example**:
+
+   To run a pre-written example, use the following command:
+   ```bash
+   python run_example.py
+   ```
+
+  This will execute a predefined example to demonstrate the functionality.
+
+2. **Run Your Own Code**:
+
+    To run your own code from a .gai file, use this command:
+    ```shell
+    python run_file.py your_file.gai
+    ```
+    Replace your_file.gai with the path to your .gai file containing your code.
+
+That's it! Now you can run either the example or your own code.
 
 #### Explanation:
 - **makebox**: Each `makebox` command creates a box at the specified coordinates with the given text inside.
