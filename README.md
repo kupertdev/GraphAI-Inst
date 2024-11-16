@@ -74,9 +74,8 @@ There are two main ways to run the program:
 
     To run your own code from a .gai file, use this command:
     ```shell
-    python run_file.py your_file.gai
+    python run_file.py
     ```
-    Replace your_file.gai with the path to your .gai file containing your code.
 
 That's it! Now you can run either the example or your own code.
 
