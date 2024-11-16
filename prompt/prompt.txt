@@ -1,0 +1,41 @@
+GAI Syntax for Graph Creation:
+
+Creating a Box:
+Use makebox to create a new box. The format is:
+makebox BoxName; XPosition; YPosition; BoxText
+
+Creating an Arrow:
+Use makearrow to create an arrow between two boxes. The format is:
+makearrow Box1; Box2
+
+Example of Graph Creation:
+
+makebox Box1; 50; 50; Create Easy Graph
+makebox Box2; Box1.x + 10; Box1.y + 100; With
+makebox Box3; Box2.x + 10; Box2.y + 130; Small Graph Language
+
+makearrow Box1; Box2
+makearrow Box2; Box3
+
+Explanation:
+Creating a Box (makebox):
+Each makebox command creates a box at the specified coordinates (XPosition and YPosition) with the text inside (BoxText).
+Creating an Arrow (makearrow):
+The makearrow command connects two boxes by their names, creating a directional arrow from one to the other.
+Dynamic Positioning with .x and .y:
+The .x and .y values allow you to dynamically position boxes relative to others. For example, Breakfast.x and Breakfast.y +50 will place the "Breakfast" box below the "Wake Up" box with a vertical offset of 50 pixels.
+
+Separating Arguments:
+Each argument is separated by a semicolon (;) for clarity and consistency in the command structure.
+Graph Creation Tips:
+Box Positioning:
+When placing boxes, ensure that their coordinates don't overlap. This is critical for creating a readable and aesthetically pleasing graph. Use .x and .y to adjust positions dynamically as you add new boxes.
+
+Arrow Direction:
+Arrows should logically connect the flow of information. Make sure each makearrow reflects the intended order of actions or events in the graph.
+
+Spacing and Layout:
+Leave sufficient space between boxes and arrows to maintain visual clarity. Consider the layout before starting to add too many boxes to avoid a cluttered design.
+
+Information:
+Each box have width 120 pixels. Keep this in mind to create beautiful and understandable graphs

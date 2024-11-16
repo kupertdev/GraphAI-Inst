@@ -1,0 +1,77 @@
+# GAI Syntax for Graph Creation
+
+GAI (Graph AI) is a language designed for creating graphs with neural networks. It allows you to easily generate and visualize graphs with simple commands to create boxes and arrows between them.
+
+## Syntax
+
+### Creating a Box
+
+To create a new box, use the `makebox` command. The format is:
+
+```gai
+makebox BoxName; XPosition; YPosition; BoxText
+```
+
+
+- **BoxName** — the name of the box.
+- **XPosition** — the X coordinate for the box.
+- **YPosition** — the Y coordinate for the box.
+- **BoxText** — the text that will appear inside the box.
+
+### Creating an Arrow
+
+To create an arrow between two boxes, use the `makearrow` command. The format is:
+
+makearrow Box1; Box2
+
+
+- **Box1** — the source box.
+- **Box2** — the target box.
+
+### Example of Graph Creation
+
+```gai
+makebox Box1; 50; 50; Create Easy Graph
+makebox Box2; Box1.x + 10; Box1.y + 100; With
+makebox Box3; Box2.x + 10; Box2.y + 130; Small Graph Language
+
+makearrow Box1; Box2
+makearrow Box2; Box3
+```
+
+
+#### Explanation:
+- **makebox**: Each `makebox` command creates a box at the specified coordinates with the given text inside.
+- **makearrow**: The `makearrow` command connects two boxes with an arrow, creating a directional flow from one box to the other.
+- **Dynamic Positioning with .x and .y**: These allow you to position boxes relative to others. For example, `Box1.x + 10` and `Box1.y + 100` will position the new box slightly to the right and below the first one.
+
+## Important Notes
+
+### Separating Arguments
+Each argument is separated by a semicolon (;) for clarity and consistency in the command structure.
+
+### Graph Creation Tips
+
+- **Box Positioning**: Ensure that the coordinates of the boxes do not overlap. This is crucial for creating a readable and aesthetically pleasing graph. Use `.x` and `.y` for dynamic positioning as new boxes are added.
+  
+- **Arrow Direction**: Arrows should logically connect the flow of information. Make sure each arrow reflects the intended sequence of actions or events in the graph.
+
+- **Spacing and Layout**: Leave enough space between boxes and arrows to maintain visual clarity. Consider the layout beforehand to avoid a cluttered design.
+
+- **Box Width**: Each box is 120 pixels wide. Keep this in mind when creating your graph to maintain clarity and readability.
+
+## Example Graph Image
+
+Example of how a graph created with GAI might look:
+
+![Hello World Graph](graphs_example\graph.png)
+
+## ChatGPT Code Example
+
+![ChatGPT Code](graphs_example\chatgpt_code.png)
+
+## Prompt
+
+### You can find prompt in prompt.txt but I didn't finalize it
+
+## Other graphs in graphs_example

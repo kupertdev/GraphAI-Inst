@@ -1,0 +1,42 @@
+makebox Start; 50; 50; Start Schedule
+makebox Box1; Start.x + 150; Start.y; Step 1
+makebox Box2; Start.x + 150; Box1.y + 150; Step 2
+makebox Box3; Start.x + 150; Box2.y + 150; Step 3
+makebox Box4; Start.x + 150; Box3.y + 150; Step 4
+makebox Box5; Start.x + 150; Box4.y + 150; Step 5
+makebox Box6; Start.x + 150; Box5.y + 150; Step 6
+makebox Box7; Start.x + 150; Box6.y + 150; Step 7
+makebox Box8; Start.x + 150; Box7.y + 150; Step 8
+makebox Box9; Start.x + 150; Box8.y + 150; Step 9
+makebox Box10; Start.x + 150; Box9.y + 150; Step 10
+makebox Box11; Start.x + 150; Box10.y + 150; Step 11
+makebox Box12; Start.x + 150; Box11.y + 150; Step 12
+makebox Box13; Start.x + 150; Box12.y + 150; Step 13
+makebox Box14; Start.x + 150; Box13.y + 150; Step 14
+makebox Box15; Start.x + 150; Box14.y + 150; Step 15
+makebox Box16; Start.x + 150; Box15.y + 150; Step 16
+makebox Box17; Start.x + 150; Box16.y + 150; Step 17
+makebox Box18; Start.x + 150; Box17.y + 150; Step 18
+makebox Box19; Start.x + 150; Box18.y + 150; Step 19
+makebox End; Start.x + 150; Box19.y + 150; End Schedule
+
+makearrow Start; Box1
+makearrow Box1; Box2
+makearrow Box2; Box3
+makearrow Box3; Box4
+makearrow Box4; Box5
+makearrow Box5; Box6
+makearrow Box6; Box7
+makearrow Box7; Box8
+makearrow Box8; Box9
+makearrow Box9; Box10
+makearrow Box10; Box11
+makearrow Box11; Box12
+makearrow Box12; Box13
+makearrow Box13; Box14
+makearrow Box14; Box15
+makearrow Box15; Box16
+makearrow Box16; Box17
+makearrow Box17; Box18
+makearrow Box18; Box19
+makearrow Box19; End
