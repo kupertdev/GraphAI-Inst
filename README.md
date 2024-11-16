@@ -64,11 +64,11 @@ Each argument is separated by a semicolon (;) for clarity and consistency in the
 
 Example of how a graph created with GAI might look:
 
-![Hello World Graph](graphs_example\graph.png)
+![Hello World Graph](graphs_example/graph.png)
 
 ## ChatGPT Code Example
 
-![ChatGPT Code](graphs_example\chatgpt_code.png)
+![ChatGPT Code](graphs_example/chatgpt_code.png)
 
 ## Prompt
 
