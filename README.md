@@ -1,6 +1,6 @@
 # GAI Syntax for Graph Creation
 
-GAI (Graph AI) is a language designed for creating graphs with neural networks. It allows you to easily generate and visualize graphs with simple commands to create boxes and arrows between them.
+GAI (Graph AI) is a instructions designed for creating graphs with neural networks. It allows you to easily generate and visualize graphs with simple commands to create boxes and arrows between them.
 
 ## Syntax
 
